@@ -11,7 +11,6 @@
 #include <set>
 #include <vector>
 #include <string>
-#include <iostream>
 
 #include "CAccount.h"
 #include "CCustomers.h"
@@ -49,8 +48,8 @@ public:
 	void print();
 	void printaccounts();
 
-    void addClient(CCustomers* cust);
-    void addAccount(CCustomers* cust, int amount);
+    void addClient(CCustomers cust);
+    void addAccount(CCustomers cust, int amount);
 	void deleteAccount(int accountNumber);
 	void deleteCustomer(CCustomers cust);
 	CAccount getAccountbynumber(int accountNumber);

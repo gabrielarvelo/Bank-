@@ -22,15 +22,23 @@ void CBank::print()
 	std::set<CCustomers>::iterator it = m_customers.begin();
 		while (it != m_customers.end())// Iterate till the end of set
 		{
-			it->print();
+			CCustomers a=*it;
 			it++;
+			a.print();
 			cout<<"  "<<endl;
 			}
-	//printing Accounts
+		//printing Accounts
 		cout<<"Bank Accounts..."<<endl;
-		printaccounts();
-		cout<<"Bank Transactions..."<<endl;
-		cout<<"=========================================================================="<<endl;
+		std::set<CAccount>::iterator ite = m_account.begin();
+				//printing accounts
+				while (ite != m_account.end())
+						{
+							CAccount a=*ite;
+							ite++;
+							a.print();
+							}
+				cout<<"Bank Transactions..."<<endl;
+				cout<<"=========================================================================="<<endl;
 }
 
 int CBank::getmaxclient()
@@ -38,17 +46,17 @@ int CBank::getmaxclient()
 	return m_maxcustomers;
 }
 
-void CBank::addClient(CCustomers* cust)
+void CBank::addClient(CCustomers cust)
 {
 	 if (m_customers.size()==m_maxcustomers){
      	cout<<"WARNING: the maximum number of customers have been reached. More clients cannot be added"<<endl;
 
 	 }else {
 	 cout << "Adding Client ";
-	 cust->print();
+	 cust.print();
 	 cout<<endl;
-     m_customers.insert(*cust);
-     }
+     m_customers.insert(cust);
+	 }
 
 }
 
@@ -68,27 +76,28 @@ CCustomers*  CBank::getpointertoCustomers(CCustomers cust)
 			}return 0;
 }
 
-void CBank::addAccount(CCustomers* cust, int amount)
+void CBank::addAccount(CCustomers cust, int amount)
 {
-	if(m_customers.find(*cust)!=m_customers.end()){
+	if(m_customers.find(cust)!=m_customers.end()){
 		 if (m_account.size()==m_maxaccount){
 			     	cout<<"WARNING: the maximum number of accounts have been reached. More accounts cannot be created"<<endl;
 
 				 }else {
 				 cout << "Creating account ";
 				 CAccount account(cust, amount);
+				 cust.print();
+				 cout<<endl;
 			     m_account.insert(account);
-			     account.print();//print all data of the account
-			     }
+			     account.print();
+				 }
 
  }else {
 	 	 	 	 cout<<"ERROR: Generating Account - Customer <";
-	 	 	 	 cust->print();
+	 	 	 	 cust.print();
 	 	 	 	 cout <<"> not found!"<<endl;
  }
 
 }
-
 
 void CBank::deleteAccount(int accountNumber)
 {
@@ -105,17 +114,15 @@ void CBank::deleteAccount(int accountNumber)
 		cout<<"this account does not exist "<<endl;
 	}
 
-
 }
-
 void CBank::printaccounts()
 {       std::set<CAccount>::iterator ite = m_account.begin();
 		//printing accounts
 		while (ite != m_account.end())
 				{
-				ite->print();
-				ite++;
-
+					CAccount a=*ite;
+					ite++;
+					a.print();
 				}
 }
 
@@ -170,11 +177,11 @@ void CBank::deleteCustomer(CCustomers cust)
 	if(it!=m_customers.end()){
 		m_customers.erase(it);
 
-		std::vector<int>::iterator iter;
-		for (iter= myvector.begin() ; iter != myvector.end(); ++iter)
-		{
-			this->deleteAccount(*iter);
-		};
+//		std::vector<int>::iterator iter;
+//		for (iter= myvector.begin() ; iter != myvector.end(); ++iter)
+//		{
+//			this->deleteAccount(*iter);
+//		};
 
 	} else {
 		cout<<"this customer does not exist "<<endl;
