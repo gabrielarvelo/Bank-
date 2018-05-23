@@ -8,25 +8,28 @@
 #define CCUSTOMERS_H_
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
 class CCustomers
 {
 private:
-    int m_nocustomets=0;
+
     string m_name;
+    bool deleted;
   //  CAccount * lnkCAccount;
 public:
 
     CCustomers();
-	CCustomers(string name);
+	CCustomers(string name="");
+	CCustomers(const CCustomers& c );
+	void erase();
 	string getCustomerName();
-	void print();
+	void print() const;
 	bool operator<(const CCustomers&  rhs) const;
-//	void deleteCustomer(string name);
 
-//    ~CCustomers();
+    ~CCustomers();
 
 };
 

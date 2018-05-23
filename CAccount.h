@@ -11,30 +11,29 @@
 #include <map>
 #include <iostream>
 #include "CCustomers.h"
+
 using namespace std;
 
 class CAccount
 {
 private:
-     /**
-      * @link association 
-      */
-	 CCustomers m_customer;
+	 CCustomers* m_customer;
 	 int m_amount;
 	 static int m_base;
 	 int m_accountNumber;
+
 
     /**@link aggregationByValue*/
     //Ctransaction lnkCtransaction;
 
 public:
-
-	CAccount();
-	CAccount(CCustomers cust, int amount);
+	 bool deleted;
+	CAccount(CCustomers* cust=NULL, int amount=0);
 	 bool operator<(const CAccount&  rhs) const;
-	 void print();
+	 void erase();
+	 void print()const;
 	 int getAccountNumber(CAccount account);
-	 CCustomers getAccountCustomer(CAccount account);
+	 const CCustomers getAccountCustomer(CAccount account);
 
 	~CAccount();
 };

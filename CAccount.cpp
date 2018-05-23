@@ -8,25 +8,22 @@
 #include "CCustomers.h"
 int CAccount::m_base=123455;
 
-CAccount::CAccount()
-{
 
-}
-
-  CAccount::CAccount(CCustomers cust, int amount)
+  CAccount::CAccount(CCustomers* cust, int amount)
 {
 	    m_amount=amount;
 		m_base++;
 		m_accountNumber=m_base;
 		m_customer=cust;
+		deleted=false;
+		//cout<<this<<"   "<<endl;
+
 }
 
 int CAccount::getAccountNumber(CAccount account)
 {
 	return m_accountNumber;
 }
-
-
 
 CAccount::~CAccount()
 {
@@ -38,17 +35,24 @@ bool CAccount::operator <(const CAccount& rhs) const
 	 return m_accountNumber < rhs.m_accountNumber;
 }
 
-void CAccount::print()
+void CAccount::erase()
 {
-	//m_customer.print();
-	cout<<m_accountNumber;
-	cout<<" ";
-	m_customer.print();
-			cout<<" "<<m_amount<<" $ "<<endl;
-	//cout<<" has in the account number "<<m_accountNumber<<" the amount of "<<m_amount<<" $ "<<endl;
+ deleted=true;
 }
 
-CCustomers CAccount::getAccountCustomer(CAccount account)
+void CAccount::print() const
 {
-	return m_customer;
+	if(deleted==false){
+	cout<<m_accountNumber;
+	cout<<" ";
+	m_customer->print();
+	cout<<" "<<m_amount<<" $ "<<endl;
+	} else {
+		cout<<"Found Deleted account "<<endl;
+	}
+}
+
+const CCustomers CAccount::getAccountCustomer(CAccount  account)
+{
+	return *m_customer;
 }

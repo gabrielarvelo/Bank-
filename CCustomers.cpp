@@ -9,13 +9,24 @@
 #include "CAccount.h"
 
 
-CCustomers::CCustomers()
+/*CCustomers::CCustomers()
 {
 
-}
+}*/
 CCustomers::CCustomers(string name)
 {
 	m_name=name;
+	deleted=false;
+//	cout<<m_name<<" Customers in the address: "<<this<<endl;
+//	cout<<"attribute address  "<<&m_name<<endl;
+}
+
+CCustomers::CCustomers(const CCustomers& c)
+{
+	m_name=c.m_name;
+	deleted=c.deleted;
+//	cout<<m_name<<" copy Customers in the address: "<<this<<endl;
+//	cout<<"attribute address  "<<&m_name<<endl;
 }
 
 bool CCustomers::operator <(const CCustomers& rhs) const
@@ -23,44 +34,30 @@ bool CCustomers::operator <(const CCustomers& rhs) const
        return m_name < rhs.m_name;
 }
 
-
-/*void CCustomers::addClient(string name,CBank & bank)
+void CCustomers::erase()
 {
- 	m_name=name;
-		        if (m_nocustomets==bank.getmaxclient()){
-		        	cout<<"WARNING: the maximum number of customers have been reached. this client cannot be added"<<endl;
-		        } else
-				{
-		        	m_customesr.push_back(m_name);
-		     	   ++m_nocustomets;
-				}
-}*/
+deleted=true;
+//cout<<"borre cliente "<<this<<endl;
 
-/*bool CCustomers::lookCustomer(string name,CBank & bank)
+}
+
+CCustomers::~CCustomers()
 {
-	vector<string>::iterator ite= m_customesr.begin();
-	for (ite=m_customesr.begin();ite!=m_customesr.end();ite++){
-		if( *ite==name){
-			return true;
-		}
-	}return false;
-}*/
+//	cout<<" destroying "<<m_name<<" customer in the address "<<this<<endl;
+	// TODO Auto-generated destructor stub
+}
 
-//CCustomers::~CCustomers()
-//{
-//	// TODO Auto-generated destructor stub
-//}
-
-void CCustomers::print()
-{
-	cout<<m_name;
+void CCustomers::print() const
+{   if(deleted==true){
+	cout<<"Found deleted customer ";
+	//<<this;
+} else{
+	cout<<m_name<< " ";
+	//<<this;
+}
 }
 
 string CCustomers::getCustomerName()
 {
 	return m_name;
 }
-/*void CCustomers::deleteCustomer(string name)
-{
-
-}*/
