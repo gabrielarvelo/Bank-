@@ -11,13 +11,15 @@
 #include <map>
 #include <iostream>
 #include "CCustomers.h"
-
 using namespace std;
 
 class CAccount
 {
 private:
-	 CCustomers* m_customer;
+     /**
+      * @link association 
+      */
+	 CCustomers m_customer;
 	 int m_amount;
 	 static int m_base;
 	 int m_accountNumber;
@@ -27,12 +29,12 @@ private:
 
 public:
 
-
-	CAccount(CCustomers* cust=NULL, int amount=0);
+	CAccount();
+	CAccount(CCustomers cust, int amount);
 	 bool operator<(const CAccount&  rhs) const;
-	 void print()const;
+	 void print();
 	 int getAccountNumber(CAccount account);
-	 const CCustomers getAccountCustomer(CAccount account);
+	 CCustomers getAccountCustomer(CAccount account);
 
 	~CAccount();
 };

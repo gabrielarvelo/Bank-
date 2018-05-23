@@ -1,0 +1,102 @@
+package id2ap4kjfr5paa3jfr5qmug;
+
+/**
+@version 2.0
+@physicalPackage
+@__modelType diagram 
+*/
+class diagram {
+/**
+@__ref <oiref:cpp#Class#CCustomers:oiref><oihard>
+@__modelType reference 
+*/
+class reference1 {
+}
+/**
+@__ref <oiref:cpp#Class#CAccount:oiref><oihard>
+@__modelType reference 
+*/
+class reference2 {
+}
+/**
+@__ref <oiref:cpp#Class#CBank:oiref><oihard>
+@__modelType reference 
+*/
+class reference3 {
+}
+/**
+@__ref <oiref:cpp#Class#Ctransaction:oiref><oihard>
+@__modelType reference 
+*/
+class reference {
+}
+}/**
+@__tags
+@shapeType ClassDiagram 
+@changelog rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz
+aG9sZHhwP0AAAAAAAAx3CAAAABAAAAAFc3IADmphdmEubGFuZy5Mb25nO4vkkMyPI98CAAFKAAV2
+YWx1ZXhyABBqYXZhLmxhbmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAWKyAIAAc3IAE2phdmEudXRp
+bC5BcnJheUxpc3R4gdIdmcdhnQMAAUkABHNpemV4cAAAAAF3BAAAAApzcgAlZGUubW5sLmRvY2Jv
+b2s0VEEuaW1wbC5DaGFuZ2VMb2dFbnRyeQeNjrX5qiSfAgADTAAIaG9zdG5hbWV0ABJMamF2YS9s
+YW5nL1N0cmluZztMAARuYW1lcQB+AAhMAAR1c2VycQB+AAh4cHQAC2NzYWVuei1NT0JMdAAJPGRl
+ZmF1bHQ+dAAGY3NhZW56eHNxAH4AAgAAAWK8TTgAc3EAfgAFAAAAAXcEAAAACnNxAH4AB3QAC2Nz
+YWVuei1NT0JMdAAJPGRlZmF1bHQ+dAAGY3NhZW56eHNxAH4AAgAAAWKns8gAc3EAfgAFAAAAAXcE
+AAAACnNxAH4AB3QAC2NzYWVuei1NT0JMdAAJPGRlZmF1bHQ+dAAGY3NhZW56eHNxAH4AAgAAAWLQ
+5qgAc3EAfgAFAAAAAXcEAAAACnNxAH4AB3QAC2NzYWVuei1NT0JMdAAJPGRlZmF1bHQ+dAAGY3Nh
+ZW56eHNxAH4AAgAAAWLLwEwAc3EAfgAFAAAAAXcEAAAACnNxAH4AB3QAC2NzYWVuei1NT0JMdAAJ
+PGRlZmF1bHQ+dAAGY3NhZW56eHg=
+@elementChangelogs rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz
+aG9sZHhwP0AAAAAAAAx3CAAAABAAAAAEdAAkPG9pcmVmOmNwcCNDbGFzcyNDdHJhbnNhY3Rpb246
+b2lyZWY+cHQAIjxvaXJlZjpjcHAjQ2xhc3MjQ0N1c3RvbWVyczpvaXJlZj5zcQB+AAA/QAAAAAAA
+DHcIAAAAEAAAAARzcgAOamF2YS5sYW5nLkxvbmc7i+SQzI8j3wIAAUoABXZhbHVleHIAEGphdmEu
+bGFuZy5OdW1iZXKGrJUdC5TgiwIAAHhwAAABYrIAgABzcgATamF2YS51dGlsLkFycmF5TGlzdHiB
+0h2Zx2GdAwABSQAEc2l6ZXhwAAAAAXcEAAAACnNyACVkZS5tbmwuZG9jYm9vazRUQS5pbXBsLkNo
+YW5nZUxvZ0VudHJ5B42OtfmqJJ8CAANMAAhob3N0bmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO0wA
+BG5hbWVxAH4AC0wABHVzZXJxAH4AC3hwdAALY3NhZW56LU1PQkx0AApDQ3VzdG9tZXJzdAAGY3Nh
+ZW56eHNxAH4ABQAAAWK8TTgAc3EAfgAIAAAAAXcEAAAACnNxAH4ACnQAC2NzYWVuei1NT0JMdAAK
+Q0N1c3RvbWVyc3QABmNzYWVuenhzcQB+AAUAAAFip7PIAHNxAH4ACAAAAAF3BAAAAApzcQB+AAp0
+AAtjc2FlbnotTU9CTHQACkNDdXN0b21lcnN0AAZjc2Flbnp4c3EAfgAFAAABYsvATABzcQB+AAgA
+AAABdwQAAAAKc3EAfgAKdAALY3NhZW56LU1PQkx0AApDQ3VzdG9tZXJzdAAGY3NhZW56eHh0AB08
+b2lyZWY6Y3BwI0NsYXNzI0NCYW5rOm9pcmVmPnNxAH4AAD9AAAAAAAAMdwgAAAAQAAAABXNxAH4A
+BQAAAWKyAIAAc3EAfgAIAAAAAXcEAAAACnNxAH4ACnEAfgANdAAFQ0JhbmtxAH4AD3hzcQB+AAUA
+AAFivE04AHNxAH4ACAAAAAF3BAAAAApzcQB+AApxAH4AE3QABUNCYW5rcQB+ABV4c3EAfgAFAAAB
+YqezyABzcQB+AAgAAAABdwQAAAAKc3EAfgAKcQB+ABl0AAVDQmFua3EAfgAbeHNxAH4ABQAAAWLQ
+5qgAc3EAfgAIAAAAAXcEAAAACnNxAH4ACnQAC2NzYWVuei1NT0JMdAAFQ0Jhbmt0AAZjc2Flbnp4
+c3EAfgAFAAABYsvATABzcQB+AAgAAAABdwQAAAAKc3EAfgAKcQB+AB90AAVDQmFua3EAfgAheHh0
+ACA8b2lyZWY6Y3BwI0NsYXNzI0NBY2NvdW50Om9pcmVmPnNxAH4AAD9AAAAAAAAMdwgAAAAQAAAA
+BHNxAH4ABQAAAWKyAIAAc3EAfgAIAAAAAXcEAAAACnNxAH4ACnEAfgANdAAIQ0FjY291bnRxAH4A
+D3hzcQB+AAUAAAFivE04AHNxAH4ACAAAAAF3BAAAAApzcQB+AApxAH4AE3QACENBY2NvdW50cQB+
+ABV4c3EAfgAFAAABYqezyABzcQB+AAgAAAABdwQAAAAKc3EAfgAKcQB+ABl0AAhDQWNjb3VudHEA
+fgAbeHNxAH4ABQAAAWLLwEwAc3EAfgAIAAAAAXcEAAAACnNxAH4ACnEAfgAfdAAIQ0FjY291bnRx
+AH4AIXh4eA==
+*/
+class __tags {
+}/**
+@__options 
+*/
+class __options {
+}/**
+@__positions <oigroup:MemberLink#<oiref:cpp#Member#CAccount#lnkCCustomersDB:oiref>=410,230,410,178:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CBank#m_account:oiref>=240,240,360,250:oigroup>
+<oigroup:Composite#supplierCardinality#MemberLink#<oiref:cpp#Member#CBank#m_customers:oiref>=330,52,26,16,0:oigroup>
+<oigroup:<oiref:cpp#Class#CBank:oiref>=40,20,200,382,1:oigroup>
+<oigroup:<oiref:cpp#Class#CCustomers:oiref>=360,20,161,174,1:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CCustomers#lnkCAccountDB:oiref>=460,178,460,230:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CAccount#lnkCtransaction:oiref>=360,344,179,344:oigroup>
+<oigroup:Composite#supplierCardinality#MemberLink#<oiref:cpp#Member#CBank#m_account:oiref>=330,228,26,16,0:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CAccount#lnkCCustomers:oiref>=404,230,404,178:oigroup>
+<oigroup:Autodependency<oiref:cpp#Class#CBank:oiref><Autodependency><oiref:cpp#Class#CCustomers:oiref>=240,83,360,83:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CBank#m_transaction:oiref>=124,290,124,300:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CBank#m_customers:oiref>=240,72,360,72:oigroup>
+<oigroup:Autodependency<oiref:cpp#Class#CAccount:oiref><Autodependency><oiref:cpp#Class#CBank:oiref>=360,240,240,238:oigroup>
+<oigroup:Autodependency<oiref:cpp#Class#CCustomers:oiref><Autodependency><oiref:cpp#Class#CBank:oiref>=360,98,240,98:oigroup>
+<oigroup:<oiref:cpp#Class#CAccount:oiref>=360,230,200,238,1:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CCustomers#lnkCAccount:oiref>=448,178,448,230:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CAccount#cust:oiref>=401,230,401,178:oigroup>
+<oigroup:Autodependency<oiref:cpp#Class#CAccount:oiref><Autodependency><oiref:cpp#Class#CCustomers:oiref>=305,302,483,184:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CBank#lnkCtransaction:oiref>=124,210,124,300:oigroup>
+<oigroup:MemberLink#<oiref:cpp#Member#CAccount#m_customer:oiref>=440,230,440,194:oigroup>
+<oigroup:<oiref:cpp#Class#Ctransaction:oiref>=110,390,109,142,1:oigroup>
+*/
+class __positions {
+}

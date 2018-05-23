@@ -8,7 +8,6 @@
 #define CCUSTOMERS_H_
 
 #include <string>
-#include <iostream>
 
 using namespace std;
 
@@ -21,9 +20,9 @@ private:
 public:
 
     CCustomers();
-	CCustomers(string name="");
+	CCustomers(string name);
 	string getCustomerName();
-	void print() const;
+	void print();
 	bool operator<(const CCustomers&  rhs) const;
 //	void deleteCustomer(string name);
 
